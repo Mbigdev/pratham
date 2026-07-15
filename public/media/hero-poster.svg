@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Abstract calming healthcare gradient">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2b3e"/>
+      <stop offset="0.5" stop-color="#124a4f"/>
+      <stop offset="1" stop-color="#0a1f2e"/>
+    </linearGradient>
+    <radialGradient id="glowTeal" cx="18%" cy="22%" r="55%">
+      <stop offset="0" stop-color="#55c7c5" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#55c7c5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="82%" cy="16%" r="50%">
+      <stop offset="0" stop-color="#8177c8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#8177c8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowAqua" cx="70%" cy="88%" r="55%">
+      <stop offset="0" stop-color="#2fa8a6" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#2fa8a6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#base)"/>
+  <rect width="1920" height="1080" fill="url(#glowTeal)"/>
+  <rect width="1920" height="1080" fill="url(#glowViolet)"/>
+  <rect width="1920" height="1080" fill="url(#glowAqua)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2">
+    <path d="M0 760 Q 480 640 960 760 T 1920 760"/>
+    <path d="M0 840 Q 480 720 960 840 T 1920 840"/>
+    <path d="M0 920 Q 480 800 960 920 T 1920 920"/>
+  </g>
+</svg>
