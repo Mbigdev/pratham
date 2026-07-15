@@ -11,7 +11,7 @@ export default function NotFound() {
         </span>
         <h1 className="mt-6 text-3xl font-bold text-navy md:text-4xl">Page not found</h1>
         <p className="mt-3 max-w-md text-ink/70">
-          The page you're looking for may have moved. Let's help you find your way back.
+          The page you&apos;re looking for may have moved. Let&apos;s help you find your way back.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button href="/">Back to home</Button>

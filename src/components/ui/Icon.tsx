@@ -145,12 +145,14 @@ export function Icon({
   className,
   strokeWidth = 1.75,
   "aria-hidden": ariaHidden = true,
+  style,
 }: {
   name: string;
   className?: string;
   strokeWidth?: number;
   "aria-hidden"?: boolean;
+  style?: React.CSSProperties;
 }) {
   const Cmp = map[name] ?? Ribbon;
-  return <Cmp className={className} strokeWidth={strokeWidth} aria-hidden={ariaHidden} />;
+  return <Cmp className={className} strokeWidth={strokeWidth} aria-hidden={ariaHidden} style={style} />;
 }

@@ -64,7 +64,7 @@ export default function UrgentCarePage() {
               <div>
                 <h2 className="text-2xl font-bold text-navy">When to call our urgent line</h2>
                 <p className="mt-3 leading-relaxed text-ink/75">
-                  If you're an PRATHAM patient experiencing concerning symptoms that aren't an
+                  If you&apos;re an PRATHAM patient experiencing concerning symptoms that aren&apos;t an
                   emergency, our 24/7 care line connects you with an oncology nurse who can advise on
                   next steps. Consider calling if you notice:
                 </p>

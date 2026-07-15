@@ -75,7 +75,7 @@ export default function CancerTypeDetailPage({ params }: { params: { slug: strin
               <h2 className="text-2xl font-bold text-navy">Understanding {cancer.name.toLowerCase()}</h2>
               <p className="mt-4 leading-relaxed text-ink/75">
                 Our {cancer.name.toLowerCase()} program brings together specialists across disciplines to
-                deliver care that's precise, coordinated, and centered on you. From your first
+                deliver care that&apos;s precise, coordinated, and centered on you. From your first
                 appointment, a care coordinator helps you navigate each step so you always know what
                 comes next.
               </p>

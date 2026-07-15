@@ -302,8 +302,8 @@ export function AppointmentForm({ defaultType, defaultLocation }: { defaultType?
                     onChange={(e) => update("isNewPatient", e.target.value)}
                   >
                     <option value="">Prefer not to say</option>
-                    <option value="new">I'm a new patient</option>
-                    <option value="returning">I'm a returning patient</option>
+                    <option value="new">I&apos;m a new patient</option>
+                    <option value="returning">I&apos;m a returning patient</option>
                   </Select>
                 </FormField>
                 <FormField label="Preferred date" htmlFor="preferredDate" required error={errors.preferredDate}>
