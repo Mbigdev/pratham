@@ -77,7 +77,7 @@ export function StoriesSection() {
                       preload="metadata"
                       poster="/media/hero-poster.svg"
                     >
-                      <source src="/media/pratham.mp4" type="video/mp4" />
+                      <source src="https://tpefiebetmhz8iwm.public.blob.vercel-storage.com/pratham.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
