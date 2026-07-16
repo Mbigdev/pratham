@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import Script from "next/script";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -54,6 +55,42 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        
+        {/* ── Chatbase AI Chatbot Widget ── */}
+        <Script
+          id="chatbase-chatbot"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){
+                if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+                  window.chatbase=(...arguments)=>{
+                    if(!window.chatbase.q){window.chatbase.q=[]}
+                    window.chatbase.q.push(arguments)
+                  };
+                  window.chatbase=new Proxy(window.chatbase,{
+                    get(target,prop){
+                      if(prop==="q"){return target.q}
+                      return(...args)=>target(prop,...args)
+                    }
+                  })
+                }
+                const onLoad=function(){
+                  const script=document.createElement("script");
+                  script.src="https://www.chatbase.co/embed.min.js";
+                  script.id="X4bHi_G8hFaJ2LcA3zYOQ";
+                  script.domain="www.chatbase.co";
+                  document.body.appendChild(script)
+                };
+                if(document.readyState==="complete"){
+                  onLoad()
+                }else{
+                  window.addEventListener("load",onLoad)
+                }
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );
